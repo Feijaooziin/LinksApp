@@ -1,8 +1,16 @@
-import { Image, Text, View, TouchableOpacity } from "react-native";
+import {
+  Image,
+  Text,
+  View,
+  TouchableOpacity,
+  Alert,
+  FlatList,
+} from "react-native";
 import styles from "./styles";
 import { MaterialIcons } from "@expo/vector-icons";
 import { colors } from "@/styles/colors";
 import { Categories } from "@/components/categories";
+import { Link } from "@/components/links";
 
 export default function Index() {
   return (
@@ -15,6 +23,21 @@ export default function Index() {
       </View>
 
       <Categories />
+
+      <FlatList
+        data={["1", "2", "3", "4", "5"]}
+        keyExtractor={(item) => item}
+        renderItem={() => (
+          <Link
+            name="Youtubezin da Massa"
+            url="https://youtube.com.br"
+            onDetails={() => Alert.alert("FOI", "Deu certo pô!")}
+          />
+        )}
+        style={styles.links}
+        contentContainerStyle={styles.linksContents}
+        showsVerticalScrollIndicator={false}
+      />
     </View>
   );
 }
