@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.gray[900],
     borderTopWidth: 1,
     borderTopColor: colors.gray[800],
-    paddingBottom: 32,
+    paddingBottom: 16,
     padding: 24,
   },
   modalHeader: {
@@ -62,6 +62,15 @@ const styles = StyleSheet.create({
   modalUrl: {
     fontSize: 14,
     color: colors.gray[400],
+  },
+  modalFooter: {
+    flexDirection: "row",
+    marginTop: 32,
+    width: "100%",
+    justifyContent: "space-between",
+    borderTopWidth: 1,
+    borderTopColor: colors.gray[600],
+    paddingVertical: 14,
   },
   closeModal: {
     backgroundColor: "red",

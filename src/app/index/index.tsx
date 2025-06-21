@@ -12,6 +12,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { colors } from "@/styles/colors";
 import { Categories } from "@/components/categories";
 import { Link } from "@/components/links";
+import { Option } from "@/components/option";
 
 export default function Index() {
   return (
@@ -57,6 +58,11 @@ export default function Index() {
             </View>
             <Text style={styles.modalLinkName}>Youtube</Text>
             <Text style={styles.modalUrl}>https://youtube.com.br</Text>
+
+            <View style={styles.modalFooter}>
+              <Option name="Excluir" icon="delete" variant="secondary" />
+              <Option name="Abrir" icon="language" />
+            </View>
           </View>
         </View>
       </Modal>
