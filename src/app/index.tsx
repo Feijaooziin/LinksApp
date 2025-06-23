@@ -75,9 +75,9 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Image source={require("@/assets/logo.png")} style={styles.logo} />
+        <Image source={require("@/assets/logo2.png")} style={styles.logo} />
         <TouchableOpacity onPress={() => router.navigate("./add")}>
-          <MaterialIcons name="add" size={32} color={colors.green[300]} />
+          <MaterialIcons name="add" size={32} color={colors.red[500]} />
         </TouchableOpacity>
       </View>
 
@@ -107,7 +107,7 @@ export default function Index() {
                 <TouchableOpacity onPress={() => setShowModal(false)}>
                   <MaterialIcons
                     name="close"
-                    size={20}
+                    size={24}
                     color={colors.gray[400]}
                   />
                 </TouchableOpacity>

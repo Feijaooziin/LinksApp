@@ -4,10 +4,10 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 48,
+    paddingTop: 64,
   },
   title: {
-    color: colors.green[900],
+    color: colors.red[500],
     fontSize: 22,
   },
   header: {
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   logo: {
     height: 32,
     width: 38,
+    borderRadius: 10,
   },
   links: {
     borderTopWidth: 1,
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
   },
   modalCategory: {
     flex: 1,
-    fontSize: 16,
+    fontSize: 24,
     fontWeight: "500",
     color: colors.gray[400],
   },

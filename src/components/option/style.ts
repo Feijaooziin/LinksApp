@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     gap: 5,
   },
   primaryTitle: {
-    color: colors.green[300],
+    color: colors.red[300],
     fontSize: 16,
     fontWeight: "600",
   },
